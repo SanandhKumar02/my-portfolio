@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
+  width: calc(100vw - 96px);
   max-width: 1040px;
   padding: 2rem 48px 40px;
   margin: 1rem auto;
@@ -61,10 +61,10 @@ justify-content: space-between;
 `
 
 export const CompanyContainer = styled.div`
-  display: flex;
+  	display: flex;
 	align-items:baseline;
 	flex-wrap: wrap;
-	margin-right: auto;
+	justify-content: end;
 	
 
 	@media ${props => props.theme.breakpoints.md}{
@@ -103,7 +103,8 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-  align-items: center;
+  	align-items: center;
+	justify-content: space-between;
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;

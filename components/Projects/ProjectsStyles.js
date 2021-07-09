@@ -90,16 +90,9 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #801414;
-
-}
+  color: #d8bfbf;
+  font-size: 1.5rem;
+  transition: 0.5s;
 `;
 
 export const TagList = styled.ul`
