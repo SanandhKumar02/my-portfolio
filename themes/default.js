@@ -3,13 +3,12 @@ export default {
   // Temp fonts
   fonts: {
     title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif"
+    main: "Encode Sans SC, cursive"
   },
   // Colors for layout
   colors: {
-    primary1: "hsl(204,23.8%,95.9%)",
-    darkTheme: "black",
-    lightTheme: "white",
+    fontDark: "white",
+    backgroundDark: "#373b40",
   },
   // Breakpoints for responsive design
   breakpoints: {
@@ -19,3 +18,4 @@ export default {
     xl: 'screen and (max-width: 1280px)'
   },
 }
+//hsl(204,23.8%,95.9%)

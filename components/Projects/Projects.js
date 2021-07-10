@@ -15,26 +15,51 @@ const Projects = () => (
           <BlogCard key={i}>
             <Img src={p.image} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <ExternalLinks href={p.link} target={"_blank"}><HeaderThree title>{p.title}</HeaderThree></ExternalLinks>
               <Hr />
             </TitleContent>
             <CardInfo>{p.description}</CardInfo>
             <div>
-              <TitleContent>Technologies Used</TitleContent>
-              {p.techUsed.map((t,i) => {
-                return (
-                  <TagList key={i}>
-                    <Tag>{t.tech}</Tag>
-                    <Tag>{t.techIcon}</Tag>
-                  </TagList>
-                );
-              })} 
+              <TitleContent style={{marginTop: "10px"}}>Technologies Used</TitleContent>
+              <TagList>
+                {p.techUsed.map((t,i) => {
+                  return (
+                    <Tag key={i}><div>{t.techIcon}</div>{t.tech}</Tag>
+                  );
+                })}
+              </TagList>
             </div>
             <div>
-              <TitleContent>Source Code</TitleContent>
-              <UtilityList>
-                <ExternalLinks href={p.code.link}>{p.code.gitIcon}</ExternalLinks>
-              </UtilityList>
+              {(() => {
+                if (p.code != null) {
+                  return (
+                    <>
+                      <TitleContent>Source Code</TitleContent>
+                      <UtilityList>
+                        <ExternalLinks href={p.code.link}>{p.code.gitIcon}</ExternalLinks>
+                      </UtilityList>
+                    </>
+                  );
+                }
+              })()}
+            </div>
+            <div>
+              {(() => {
+                if(p.contributors != null){
+                  return (
+                    <>
+                      <TitleContent>Contributors</TitleContent>
+                      <UtilityList>
+                        {p.contributors.map((c,i) => {
+                          return(
+                            <ExternalLinks target={"_blank"} key={i} href={c.link}>{c.name}</ExternalLinks>
+                          );
+                        })}
+                      </UtilityList>
+                    </>
+                  );
+                }
+              })()}
             </div>
           </BlogCard>
         );

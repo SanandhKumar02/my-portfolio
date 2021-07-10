@@ -11,7 +11,7 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{ color: "white" }}>
-          <Logo><em>S</em><strong>K.</strong></Logo>
+          <Logo style={{fontFamily: "Space Grotesk, sans-serif"}}><em>S</em><strong>K.</strong></Logo>
         </a>
       </Link>
     </Div1>
@@ -26,11 +26,11 @@ const Header = () =>  (
           <NavLink>Projects</NavLink>
         </Link>
       </li>
-      <li>
+      {/* <li>
         <ThemeSwitcher>
           <BsFillBrightnessHighFill size="3rem" />
         </ThemeSwitcher>
-      </li>
+      </li> */}
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/SanandhKumar02" target="_blank">
