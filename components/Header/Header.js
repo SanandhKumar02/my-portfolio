@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { BsMoon, BsFillBrightnessHighFill} from 'react-icons/bs';
+// import { BsMoon, BsFillBrightnessHighFill} from 'react-icons/bs';
 
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Logo, ThemeSwitcher } from './HeaderStyles';
