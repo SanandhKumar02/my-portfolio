@@ -4,10 +4,10 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 // import { BsMoon, BsFillBrightnessHighFill} from 'react-icons/bs';
 
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Logo, ThemeSwitcher } from './HeaderStyles';
+import { HeaderWrapper, Div1, Div2, Div3, NavLink, SocialIcons, Logo } from './HeaderStyles';
 
 const Header = () =>  (
-  <Container style={{ margin: "auto" }}>
+  <HeaderWrapper>
     <Div1>
       <Link href="/">
         <a style={{ color: "white" }}>
@@ -43,7 +43,7 @@ const Header = () =>  (
         <AiFillInstagram size="3rem" />
       </SocialIcons>
     </Div3>
-  </Container>
+  </HeaderWrapper>
 );
 
 export default Header;

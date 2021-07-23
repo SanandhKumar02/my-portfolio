@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-max-width: 1280px;
-width: 100%;
-margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    /* width: 100%; */
+    margin: 0 auto;
+    background-image: url("/Background.svg");
+    background-size: cover;
+    background-position: center;
 `;
