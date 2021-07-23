@@ -1,3 +1,6 @@
+<div align="center"><img src="./public/favicon.ico"/> </div>
+
+
 This is my personal website built using [Next.js](https://nextjs.org/)
 
 ## Website Link
