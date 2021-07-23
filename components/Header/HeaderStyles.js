@@ -41,6 +41,7 @@ export const Div2 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    grid-row-gap: 1rem;
   }
 `;
 export const Div3 = styled.div`
