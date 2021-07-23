@@ -1,4 +1,4 @@
-<div align="center"><img src="./public/favicon.ico"/> </div>
+<div align="center"><img src="./public/SK.jpeg" /></div>
 
 
 This is my personal website built using [Next.js](https://nextjs.org/)
