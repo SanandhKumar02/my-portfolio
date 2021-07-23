@@ -26,6 +26,11 @@ const Header = () =>  (
           <NavLink>Projects</NavLink>
         </Link>
       </li>
+      <li>
+        <Link href="#contact" passHref>
+          <NavLink>Contact</NavLink>
+        </Link>
+      </li>
       {/* <li>
         <ThemeSwitcher>
           <BsFillBrightnessHighFill size="3rem" />

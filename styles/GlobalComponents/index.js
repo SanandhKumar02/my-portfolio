@@ -25,7 +25,7 @@ export const Section = styled.section`
 `
 export const SectionTitle = styled.h2`
   font-weight: 800;
-  font-family: Space Grotesk, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
@@ -55,6 +55,7 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
+  font-family: Arial, Helvetica, sans-serif;
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
