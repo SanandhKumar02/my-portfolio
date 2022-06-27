@@ -15,7 +15,7 @@ const Projects = () => (
           <BlogCard key={i}>
             <Img src={p.image} />
             <TitleContent>
-              <ExternalLinks href={p.link} target={"_blank"}><HeaderThree title>{p.title}</HeaderThree></ExternalLinks>
+              <ExternalLinks href={'/projects/' + p.slug} target={"_blank"}><HeaderThree title>{p.title}</HeaderThree></ExternalLinks>
               <Hr />
             </TitleContent>
             <CardInfo>{p.description}</CardInfo>
