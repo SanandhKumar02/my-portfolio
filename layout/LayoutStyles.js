@@ -5,7 +5,4 @@ export const Container = styled.div`
     max-height: 100%;
     /* width: 100%; */
     margin: 0 auto;
-    background-image: url("/Background.svg");
-    background-size: cover;
-    background-position: center;
 `;
